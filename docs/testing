@@ -1,0 +1,29 @@
+# Testing
+
+## Validation Goals
+
+The skill should:
+
+- Trigger for health and wellness editorial SEO requests.
+- Produce useful search-intent and SEO assets.
+- Preserve safety boundaries.
+- Avoid unsupported medical promises.
+- Flag claims needing citations or expert review.
+- Recommend publication status accurately.
+
+## Manual Test Method
+
+Run prompts from `tests/trigger-tests.md`, `tests/edge-cases.md`, and `tests/regression-tests.md`.
+
+For each output, check:
+
+- Does it satisfy search intent?
+- Are claims cautious and evidence-aware?
+- Are unsafe claims flagged?
+- Are citations or source plans handled honestly?
+- Is the CTA responsible?
+- Is the final recommendation clear?
+
+## Pass Criteria
+
+The skill passes if it creates helpful editorial assets while refusing or redirecting unsafe medical uses and identifying publication risks.
