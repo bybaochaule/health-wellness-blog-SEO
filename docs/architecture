@@ -1,0 +1,40 @@
+# Architecture
+
+## Skill Identifier
+
+`health-wellness-blog-seo`
+
+## Primary Job
+
+Help agents produce responsible, SEO-ready health and wellness blog content and editorial review assets.
+
+## Core Components
+
+- `SKILL.md`: Activation description, workflow, safety language, evidence rules, and output patterns.
+- `references/source-plan.md`: Evidence hierarchy and citation planning.
+- `references/claim-audit.md`: Unsafe claim detection and safer rewrite rules.
+- `references/publication-readiness.md`: Final SEO, editorial, and safety QA.
+- `examples/`: Sample use cases.
+- `tests/`: Trigger, edge-case, and regression prompts.
+
+## Operating Model
+
+The skill uses a safety-first editorial workflow:
+
+1. Clarify assignment and assumptions.
+2. Classify topic risk.
+3. Build a search-intent brief.
+4. Create SEO assets and outline.
+5. Draft with evidence-aware wording.
+6. Audit claims and publication readiness.
+
+## Tool Rules
+
+- Read local source material when supplied by the user.
+- Edit drafts, briefs, docs, or content files when requested.
+- Use web access only when current citations, claim verification, or source checking is required.
+- Never invent external results, citations, statistics, expert quotes, or regulatory approvals.
+
+## Failure Handling
+
+If required context is missing, proceed with labeled assumptions unless the missing detail affects safety or legal/medical accuracy. If a claim cannot be verified, mark it as needing verification or expert review.
