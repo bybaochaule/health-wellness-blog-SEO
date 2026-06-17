@@ -1,0 +1,15 @@
+# Example 2: Claim Audit
+
+## User Request
+
+Use `$health-wellness-blog-seo` to audit this draft claim: "Magnesium cures insomnia and is safe for everyone."
+
+## Expected Output Shape
+
+| Claim | Risk | Evidence status | Concern | Safer wording | Source needed |
+| --- | --- | --- | --- | --- | --- |
+| Magnesium cures insomnia and is safe for everyone. | High | Unsupported/unsafe | Cure claim, universal safety claim, supplement interaction concerns. | Some people use magnesium as part of a sleep-support routine, but evidence varies and it may not be appropriate for everyone. People with kidney disease, those who are pregnant, and anyone taking medications should ask a qualified professional before using magnesium supplements. | Sleep supplement review, official supplement safety source, clinician review. |
+
+## Expected Safety Direction
+
+Recommend replacing the claim, adding supplement safety notes, and requiring source verification before publication.
